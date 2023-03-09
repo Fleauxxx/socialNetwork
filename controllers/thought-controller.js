@@ -39,6 +39,7 @@ const thoughtController = {
       })
       .then((dbUserData) => {
         if (!dbUserData) {
+          console.log(dbUserData)
           return res.status(404).json({ message: 'Thought created but no user with this id!' });
         }
 
